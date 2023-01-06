@@ -64,7 +64,11 @@ public class DNDSyncAccessService extends AccessibilityService {
         final int top = (int)(height * .25);
         final int mid = (int)(height * .5);
         final int bottom = (int)(height * .75);
-        final int midX = displayMetrics.widthPixels / 2;
+        final int width = displayMetrics.widthPixels;
+        final int left = (int)(width * .25);
+        final int center = (int)(width * .5);
+        final int right = (int)(width * .75);
+        final int midX = left;
 
         path.moveTo(midX, (int)(height * .4));
         gestureBuilder.addStroke(new GestureDescription.StrokeDescription(path, 0, 50));
