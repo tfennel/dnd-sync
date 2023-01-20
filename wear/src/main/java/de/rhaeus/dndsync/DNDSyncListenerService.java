@@ -136,6 +136,7 @@ public class DNDSyncListenerService extends WearableListenerService {
         }
 
         // close quick panel
+        // back is causing crown invocation?
         serv.goBack();
 
         wakeLock.release();
